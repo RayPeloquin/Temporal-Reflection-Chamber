@@ -72,10 +72,10 @@ The relevant transformation is experimentally established in that engineered lin
 
 For an ideal empty air-filled conducting cube of side D = 2.4384 m, standard cavity equations [3] give:
 
-\[
+$
 f_{\min}=\frac{c_0}{\sqrt{2}D}=86.936220\ \mathrm{MHz},
 \qquad T_{\mathrm{air}}=\frac{D}{c_0}=8.133627\ \mathrm{ns}.
-\]
+$
 
 Here c0 = 299,792,458 m/s. These are ideal geometry calculations, not measured room properties. With a fixed z-axis convention, the lowest cubic modes TE101, TE011 and TM110 are degenerate; real doors, racks and feedthroughs change that symmetry and the losses.
 
@@ -85,16 +85,16 @@ The air crossing time does not impose a minimum inter-cell trigger skew. Command
 
 This section is an analytic baseline to be replaced by the measured circuit's dispersion and switching behavior. Let L′ be fixed inductance per unit length and switch capacitance from C1′ to C2′ = r C1′ in a locally uniform, nondispersive line:
 
-\[
+$
 v=\frac{1}{\sqrt{L'C'}},\qquad Z=\sqrt{\frac{L'}{C'}}.
-\]
+$
 
 At a uniform temporal interface, using conserved spatial wavenumber in the ideal model:
 
-\[
+$
 \frac{v_2}{v_1}=\frac{Z_2}{Z_1}
 =\frac{|f_2|}{|f_1|}=\frac{1}{\sqrt{r}}.
-\]
+$
 
 | Illustrative change | Ideal prediction |
 | --- | --- |
@@ -108,15 +108,15 @@ The frequency statement concerns magnitude; temporal scattering includes branche
 
 Set the input reference plane at x = 0. A feature enters at time ti, the uniform switch occurs at ts, and the ideal velocities are v1 before and v2 after switching. While that feature is inside the line, its position at the event is x = v1(ts − ti). Its backward arrival at the same reference plane is:
 
-\[
+$
 t_b=t_s+\frac{v_1}{v_2}(t_s-t_i).
-\]
+$
 
 Writing s = v1/v2 = √r gives:
 
-\[
+$
 t_b=(1+s)t_s-s t_i.
-\]
+$
 
 For the illustrative r = 4 case, tb = 3ts − 2ti. Later-entering features return earlier, and the returned feature's arrival shifts by three units of time for each unit change in switch time. This is our ideal kinematic prediction, not measured data or a universal rule for arbitrary switched networks. Receiver, cable and interface-plane delays must be removed before comparison.
 
@@ -126,10 +126,10 @@ A fit to arrival versus switch time supplies an additional test beyond a visuall
 
 The waveform must occupy the actively switched region during the transition. Define Tpacket from a declared energy-containment threshold, including the full asymmetric sequence. Let Tinterface include the worst measured cell transition and inter-cell timing spread, and let Tguard cover timing uncertainty and boundary contamination. Require a usable containment window:
 
-\[
+$
 T_{\mathrm{packet}}+2T_{\mathrm{guard}}+T_{\mathrm{interface}}
 <T_{\mathrm{transit,1}}.
-\]
+$
 
 Use the measured pre-switch transit behavior across the accepted band; account explicitly for dispersion and out-of-window tails. The RF pulse duration, line electrical length, number of cells, cell spacing and frequency band must be selected jointly. They are not fixed by the room dimension.
 
@@ -173,10 +173,10 @@ These numbers are proposed engineering gates. They are not published standards o
 
 This experiment uses externally powered switching. Choose and document a system boundary that includes the line, switched capacitor branches and switching devices. For that boundary, keep an energy ledger of the form:
 
-\[
+$
 E_{\mathrm{RF,in}}+W_{\mathrm{control}}
 =E_{\mathrm{RF,out}}+E_{\mathrm{diss}}+E_{\mathrm{leak}}+\Delta U.
-\]
+$
 
 Wcontrol is signed net work crossing the chosen control boundary. Initial/final capacitor charge, energy retained in disconnected branches, dissipation and leakage must not be double-counted or omitted. Report measured, modeled and bounded terms separately with uncertainty.
 
