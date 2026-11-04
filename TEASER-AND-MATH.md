@@ -20,9 +20,9 @@ Calculations checked with Wolfram
 
 For a spatially uniform temporal step in an ideal nondispersive transmission line, with fixed inductance per unit length:
 
-\[
+$
 \frac{|f_2|}{|f_1|}=\sqrt{\frac{C'_1}{C'_2}},\qquad C'_2=4C'_1\ \Longrightarrow\ \frac{|f_2|}{|f_1|}=\frac12.
-\]
+$
 
 Here C′ is capacitance per unit length. An illustrative 40 MHz component would shift to 20 MHz; the reversed envelope’s feature spacings would double. These are ideal model predictions, not measured results. Actual amplitudes, bandwidth and timing depend on the implemented switching circuit, dispersion and losses.
 
